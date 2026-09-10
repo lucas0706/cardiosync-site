@@ -3,39 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de Privacidad - CardioSync</title>
+
+<title>CardioSync - Política de Privacidad</title>
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-font-family:Arial,sans-serif;
-background:#f8fafc;
-color:#0f172a;
-max-width:900px;
-margin:auto;
-padding:40px 24px;
+font-family:'DM Sans',sans-serif;
+background:#f5f8fc;
+color:#1f2937;
 line-height:1.7;
 }
 
-h1{
-color:#2563eb;
+.hero{
+background:linear-gradient(135deg,#2563eb,#1e40af);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.hero img{
+width:120px;
+border-radius:24px;
+margin-bottom:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.nav{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+padding:10px 16px;
+border:1px solid rgba(255,255,255,.3);
+border-radius:999px;
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
+
+.cards{
+display:grid;
+gap:24px;
 }
 
 .card{
 background:white;
-border:1px solid #e2e8f0;
-border-radius:16px;
-padding:24px;
-margin-bottom:20px;
+padding:28px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-a{
+.card h2{
 color:#2563eb;
-text-decoration:none;
+margin-bottom:12px;
+}
+
+.footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:30px 20px;
+margin-top:60px;
 }
 </style>
 </head>
 
 <body>
+
+<section class="hero">
+
+<img src="assets/icon.png" alt="CardioSync">
 
 <h1>Política de Privacidad</h1>
 
@@ -43,87 +107,127 @@ text-decoration:none;
 Última actualización: Septiembre 2026
 </p>
 
+<div class="nav">
+<a href="index.html">Inicio</a>
+<a href="terms.html">Términos</a>
+<a href="support.html">Soporte</a>
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="cards">
+
 <div class="card">
 <h2>1. Introducción</h2>
-
 <p>
-CardioSync es una aplicación destinada al registro y seguimiento
-de información relacionada con la salud cardiovascular.
-La privacidad y seguridad de los datos del usuario son una prioridad.
+CardioSync está comprometida con la protección de la privacidad de sus usuarios y con el tratamiento responsable de la información relacionada con la salud.
 </p>
 </div>
 
 <div class="card">
 <h2>2. Información almacenada</h2>
-
 <p>
-La aplicación puede almacenar:
-</p>
-
-<ul>
-<li>Presión arterial sistólica y diastólica.</li>
-<li>Frecuencia cardíaca.</li>
-<li>Notas asociadas a las mediciones.</li>
-<li>Configuraciones de la aplicación.</li>
-<li>Información importada mediante Health Connect cuando el usuario lo autorice.</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>3. Almacenamiento local</h2>
-
-<p>
-Los registros se almacenan principalmente en el dispositivo del usuario.
-CardioSync no transmite automáticamente la información médica a servidores propios.
+La aplicación puede almacenar registros de presión arterial, frecuencia cardíaca, peso corporal y otra información ingresada por el usuario o autorizada mediante integraciones compatibles.
 </p>
 </div>
 
 <div class="card">
-<h2>4. Copias de seguridad</h2>
-
+<h2>3. Health Connect</h2>
 <p>
-Cuando el usuario habilita la función de respaldo,
-CardioSync puede crear copias de seguridad en la cuenta personal
-de Google Drive asociada al usuario.
+CardioSync puede acceder a datos de Health Connect únicamente cuando el usuario concede permisos explícitos.
 </p>
 
 <p>
-Estas copias permanecen bajo el control del propietario de la cuenta Google.
+Dependiendo de los permisos otorgados, la aplicación puede leer información relacionada con sueño, actividad física, peso corporal y frecuencia cardíaca.
 </p>
 </div>
 
 <div class="card">
-<h2>5. Compartición de datos</h2>
+<h2>4. Google Drive</h2>
+<p>
+CardioSync utiliza Google Drive exclusivamente para crear y restaurar copias de seguridad solicitadas por el usuario.
+</p>
 
 <p>
-CardioSync no vende, alquila ni comparte información personal o médica con terceros.
+La aplicación no utiliza Google Drive para fines publicitarios, análisis de comportamiento ni comercialización de datos.
 </p>
 </div>
 
 <div class="card">
-<h2>6. Seguridad</h2>
+<h2>5. Almacenamiento local</h2>
+<p>
+La información principal se almacena localmente en el dispositivo del usuario.
+</p>
 
 <p>
-Se aplican medidas razonables para proteger la integridad de los datos almacenados.
-Sin embargo, ningún sistema puede garantizar seguridad absoluta.
+El usuario conserva el control sobre sus registros y puede eliminarlos cuando lo desee.
 </p>
 </div>
 
 <div class="card">
-<h2>7. Contacto</h2>
-
+<h2>6. Compartición de información</h2>
 <p>
-Consultas sobre privacidad:
+CardioSync no vende ni comercializa información personal o datos de salud.
 </p>
 
 <p>
-luke386805704@gmail.com
+La aplicación no comparte información médica con terceros salvo cuando el propio usuario decide exportarla o respaldarla utilizando servicios externos.
 </p>
 </div>
 
+<div class="card">
+<h2>7. Seguridad</h2>
 <p>
-<a href="index.html">← Volver a CardioSync</a>
+Se implementan medidas razonables para proteger la integridad de los datos almacenados por la aplicación.
 </p>
+
+<p>
+No obstante, ningún sistema puede garantizar seguridad absoluta frente a incidentes o accesos no autorizados.
+</p>
+</div>
+
+<div class="card">
+<h2>8. Eliminación de datos</h2>
+<p>
+Los usuarios pueden eliminar registros desde la aplicación y también eliminar copias de seguridad almacenadas en Google Drive.
+</p>
+</div>
+
+<div class="card">
+<h2>9. Derechos del usuario</h2>
+<p>
+Los usuarios pueden acceder, modificar, exportar y eliminar la información gestionada por CardioSync dentro de las capacidades disponibles en la aplicación.
+</p>
+</div>
+
+<div class="card">
+<h2>10. Cambios en esta política</h2>
+<p>
+Esta política podrá actualizarse periódicamente para reflejar cambios funcionales, legales o regulatorios.
+</p>
+</div>
+
+<div class="card">
+<h2>11. Contacto</h2>
+<p>
+Para consultas relacionadas con privacidad o protección de datos:
+</p>
+
+<p>
+<strong>luke38680570@gmail.com</strong>
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+<h3>CardioSync</h3>
+<p>Seguimiento cardiovascular y gestión de datos de salud.</p>
+</footer>
 
 </body>
 </html>
