@@ -6,13 +6,119 @@
 
 <title>CardioSync</title>
 
-<link rel="stylesheet" href="styles.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f8fc;
+color:#1f2937;
+line-height:1.6;
+}
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#1e40af);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.3rem;
+max-width:800px;
+margin:auto;
+}
+
+.nav{
+margin-top:30px;
+}
+
+.nav a{
+display:inline-block;
+margin:8px;
+padding:12px 20px;
+border-radius:10px;
+background:white;
+color:#2563eb;
+text-decoration:none;
+font-weight:bold;
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:70px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:12px;
+color:#2563eb;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:20px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:60px;
+}
+
+.badge{
+display:inline-block;
+background:#dbeafe;
+color:#1e40af;
+padding:8px 14px;
+border-radius:999px;
+font-size:.9rem;
+margin-bottom:20px;
+}
+</style>
 </head>
 
 <body>
 
-<header class="hero">
+<section class="hero">
 
 <div class="badge">
 ❤️ Salud Cardiovascular
@@ -20,121 +126,133 @@
 
 <h1>CardioSync</h1>
 
-<p class="hero-text">
-Aplicación diseñada para registrar, analizar y proteger tus mediciones de presión arterial.
-</p>
-
-<div class="buttons">
-<a href="privacy.html" class="btn-primary">
-Política de Privacidad
-</a>
-
-<a href="terms.html" class="btn-secondary">
-Términos de Servicio
-</a>
-</div>
-
-</header>
-
-<section class="section">
-
-<h2>¿Qué es CardioSync?</h2>
-
 <p>
-CardioSync permite registrar mediciones de presión arterial,
-realizar seguimiento histórico y mantener copias de seguridad seguras
-en Google Drive.
+Aplicación diseñada para registrar, analizar y proteger información cardiovascular y datos de salud integrados desde Health Connect.
 </p>
+
+<div class="nav">
+<a href="privacy.html">Política de Privacidad</a>
+<a href="terms.html">Términos de Servicio</a>
+</div>
 
 </section>
 
-<section class="cards">
+<section class="section">
+
+<h2 class="section-title">
+¿Qué es CardioSync?
+</h2>
+
+<div class="cards">
 
 <div class="card">
-<h3>📈 Estadísticas</h3>
+<h3>📈 Presión arterial</h3>
 <p>
-Visualización de tendencias y evolución de tus registros.
+Registro manual de presión sistólica, diastólica y frecuencia cardíaca con historial completo.
+</p>
+</div>
+
+<div class="card">
+<h3>📊 Estadísticas</h3>
+<p>
+Visualización de tendencias, promedios y evolución de las mediciones.
 </p>
 </div>
 
 <div class="card">
 <h3>☁️ Google Drive</h3>
 <p>
-Copias de seguridad automáticas y restauración sencilla.
+Copias de seguridad y restauración de la base de datos mediante Google Drive.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Integración con Health Connect
+</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>😴 Sueño</h3>
+<p>
+Lectura de información de sueño desde Health Connect.
+</p>
+</div>
+
+<div class="feature">
+<h3>🚶 Actividad física</h3>
+<p>
+Pasos, actividad diaria y métricas compatibles.
+</p>
+</div>
+
+<div class="feature">
+<h3>⚖️ Peso corporal</h3>
+<p>
+Integración de registros de peso almacenados en Health Connect.
+</p>
+</div>
+
+<div class="feature">
+<h3>❤️ Frecuencia cardíaca</h3>
+<p>
+Sincronización de datos compatibles disponibles en el dispositivo.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Privacidad y Seguridad
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🔒 Control del usuario</h3>
+<p>
+Los datos permanecen bajo control del usuario y pueden exportarse o restaurarse mediante copias de seguridad.
 </p>
 </div>
 
 <div class="card">
-<h3>🔒 Privacidad</h3>
+<h3>📱 Almacenamiento local</h3>
 <p>
-Tus datos permanecen bajo tu control.
+La información principal se almacena localmente en el dispositivo.
 </p>
+</div>
+
+<div class="card">
+<h3>☁️ Acceso limitado a Drive</h3>
+<p>
+Google Drive se utiliza únicamente para gestionar archivos de respaldo creados por CardioSync.
+</p>
+</div>
+
 </div>
 
 </section>
 
-<section class="section">
+<footer class="footer">
 
-<h2>Características principales</h2>
-
-<ul class="feature-list">
-
-<li>Registro de presión sistólica y diastólica</li>
-
-<li>Frecuencia cardíaca</li>
-
-<li>Historial completo</li>
-
-<li>Estadísticas avanzadas</li>
-
-<li>Exportación de datos</li>
-
-<li>Copias de seguridad locales</li>
-
-<li>Integración con Google Drive</li>
-
-</ul>
-
-</section>
-
-<section class="section">
-
-<h2>Seguridad de los datos</h2>
+<h3>CardioSync</h3>
 
 <p>
-CardioSync almacena la información localmente en el dispositivo.
-Las copias de seguridad en Google Drive son creadas únicamente
-cuando el usuario lo solicita o configura.
+Seguimiento cardiovascular y gestión de datos de salud.
 </p>
 
-</section>
-
-<section class="section">
-
-<h2>Próximamente</h2>
-
-<ul class="feature-list">
-
-<li>Seguimiento de sueño</li>
-
-<li>Actividad física</li>
-
-<li>Peso corporal</li>
-
-<li>Integración Health Connect</li>
-
-<li>Reportes avanzados</li>
-
-</ul>
-
-</section>
-
-<footer>
-
-<p>© 2026 CardioSync</p>
-
-<p>
-Aplicación para seguimiento personal de salud cardiovascular.
+<p style="margin-top:15px;">
+© 2026 CardioSync
 </p>
 
 </footer>
