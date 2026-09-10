@@ -7,6 +7,7 @@
 <title>CardioSync - Soporte</title>
 
 <link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,21 +27,62 @@ color:#1f2937;
 line-height:1.6;
 }
 
-.container{
-max-width:1000px;
-margin:auto;
+.hero{
+background:linear-gradient(135deg,#2563eb,#1e40af);
+color:white;
 padding:60px 20px;
+text-align:center;
 }
 
-h1{
-font-size:2.5rem;
+.hero img{
+width:120px;
+border-radius:24px;
 margin-bottom:20px;
-color:#2563eb;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
 }
 
-h2{
-margin-top:40px;
-margin-bottom:15px;
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+}
+
+.nav{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+padding:10px 16px;
+border:1px solid rgba(255,255,255,.3);
+border-radius:999px;
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+margin-bottom:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:24px;
 }
 
 .card{
@@ -48,63 +90,101 @@ background:white;
 padding:25px;
 border-radius:18px;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
-margin-bottom:20px;
 }
 
-a{
+.card h3{
 color:#2563eb;
-text-decoration:none;
+margin-bottom:12px;
 }
 
 .footer{
+background:#111827;
+color:white;
 text-align:center;
-padding:40px 20px;
-color:#6b7280;
+padding:30px 20px;
+margin-top:60px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<section class="hero">
+
+<img src="assets/icon.png" alt="CardioSync">
 
 <h1>Soporte CardioSync</h1>
 
-<div class="card">
-<h2>Contacto</h2>
 <p>
-Si necesitás ayuda con CardioSync, podés comunicarte mediante el correo electrónico de soporte.
+Centro de ayuda para usuarios de CardioSync.
+</p>
+
+<div class="nav">
+<a href="index.html">Inicio</a>
+<a href="privacy.html">Privacidad</a>
+<a href="terms.html">Términos</a>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Preguntas Frecuentes
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📱 ¿Dónde se almacenan mis datos?</h3>
+<p>
+Los registros se almacenan localmente en el dispositivo del usuario.
 </p>
 </div>
 
 <div class="card">
-<h2>Preguntas frecuentes</h2>
+<h3>☁️ ¿Para qué utiliza Google Drive?</h3>
+<p>
+Google Drive se utiliza únicamente para crear y restaurar copias de seguridad generadas por CardioSync.
+</p>
+</div>
 
-<p><strong>¿Dónde se almacenan mis datos?</strong></p>
-<p>Los registros se almacenan localmente en el dispositivo.</p>
+<div class="card">
+<h3>❤️ ¿Qué datos puede leer Health Connect?</h3>
+<p>
+Dependiendo de los permisos otorgados por el usuario: sueño, actividad física, peso corporal y frecuencia cardíaca.
+</p>
+</div>
 
-<br>
+<div class="card">
+<h3>🗑️ ¿Cómo elimino mis datos?</h3>
+<p>
+Los registros pueden eliminarse desde la aplicación y las copias de seguridad pueden eliminarse desde Google Drive.
+</p>
+</div>
 
-<p><strong>¿Para qué se utiliza Google Drive?</strong></p>
-<p>Google Drive se utiliza únicamente para crear y restaurar copias de seguridad generadas por CardioSync.</p>
+<div class="card">
+<h3>📄 ¿Puedo exportar mis registros?</h3>
+<p>
+Sí. CardioSync permite exportar información y generar reportes PDF.
+</p>
+</div>
 
-<br>
-
-<p><strong>¿Cómo elimino mis datos?</strong></p>
-<p>Los registros pueden eliminarse desde la aplicación o eliminando la copia de seguridad almacenada en Google Drive.</p>
-
-<br>
-
-<p><strong>¿Qué datos puede leer Health Connect?</strong></p>
-<p>Dependiendo de los permisos otorgados por el usuario: sueño, actividad física, peso corporal y frecuencia cardíaca.</p>
-
+<div class="card">
+<h3>🔒 ¿Quién tiene acceso a mis datos?</h3>
+<p>
+Los datos permanecen bajo control del usuario. CardioSync no comparte información médica con terceros.
+</p>
 </div>
 
 </div>
 
-<div class="footer">
-© 2026 CardioSync
-</div>
+</section>
+
+<footer class="footer">
+<h3>CardioSync</h3>
+<p>Seguimiento cardiovascular y gestión de datos de salud.</p>
+</footer>
 
 </body>
 </html>
